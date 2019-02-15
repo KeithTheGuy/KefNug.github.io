@@ -1,18 +1,3 @@
-@keyframes background {
-    from {background-position: 0 0;}
-    to {background-position: 1024px 128px;}
-}
-
-@keyframes rainbow {
-    00.00% {color: rgb(255, 0, 0);}
-    16.66% {color: rgb(255, 255, 0);}
-    33.33% {color: rgb(0, 255, 0);}
-    50.00% {color: rgb(0, 255, 255);}
-    66.66% {color: rgb(0, 0, 255);}
-    83.33% {color: rgb(255, 0, 255);}
-    100.0% {color: rgb(255, 0, 0);}
-}
-
 @keyframes wiggle {
     00.00% {transform: rotate(-12deg);}
     50.00% {transform: rotate(12deg);}
@@ -54,7 +39,6 @@ body {
 
 embed {
     border: none;
-    width: 100%;
 }
 
 h1,h2,h3,h4,h5,h6,p {
