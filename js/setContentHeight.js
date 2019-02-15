@@ -13,8 +13,8 @@ function setContentHeight() {
             document.getElementById("center").style.height = divHeight;
             document.getElementById("content").style.height = contentHeight;
             document.getElementById("home").style.height = contentHeight;
-            document.getElementById("page1").style.height = contentHeight;
-            document.getElementById("page2").style.height = contentHeight;
+            document.getElementById("projects").style.height = contentHeight;
+            document.getElementById("references").style.height = contentHeight;
         }
     , 1000);
 }
