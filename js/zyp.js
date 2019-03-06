@@ -5,7 +5,7 @@ function animatedTitle() {
         setInterval(function(){
             document.title = animatedTitle[i];
             i++;
-            if(i >= 2){
+            if(i >= 3){
                 i = 0;
             }
         }, 512);
