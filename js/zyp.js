@@ -4,8 +4,7 @@ function animatedTitle() {
     setInterval(function(){
         setInterval(function(){
             document.title = animatedTitle[i];
-            i++;
-            if(i >= 2){i = 0;}
+            i = Math.floor(Math.random() * 3);
         }, 256);
     }, 768);
 }
