@@ -2,11 +2,9 @@ function animatedTitle() {
     var animatedTitle = ["Zyp","zYp","zyP"];
     var i = 0;    
     setInterval(function(){
-        setInterval(function(){
-            document.title = animatedTitle[i];
-            i = Math.floor(Math.random() * 3);
-        }, 100);
-    }, 300);
+        document.title = animatedTitle[i];
+        i = Math.floor(Math.random() * 3);
+    }, 100);
 }
 function setContentHeight() {     
     setInterval(function(){
