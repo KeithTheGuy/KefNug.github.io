@@ -5,8 +5,8 @@ function animatedTitle() {
         setInterval(function(){
             document.title = animatedTitle[i];
             i = Math.floor(Math.random() * 3);
-        }, 256);
-    }, 768);
+        }, 100);
+    }, 300);
 }
 function setContentHeight() {     
     setInterval(function(){
