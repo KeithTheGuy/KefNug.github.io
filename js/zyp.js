@@ -1,10 +1,13 @@
 function animatedTitle() {     
-    var animatedTitle = ["Zyp","zYp","zyP"];
+    var animatedTitle = ["ZYP-------","-ZYP------","--ZYP-----","---ZYP----","----ZYP---","-----ZYP--","------ZYP-","-------ZYP","P-------ZY","YP-------Z"];
     var i = 0;    
     setInterval(function(){
-        document.title = animatedTitle[i];
-        i = Math.floor(Math.random() * 3);
-    }, 100);
+        setInterval(function(){
+            document.title = animatedTitle[i];
+            i++
+            if(i > 9){i = 0;}
+        }, 1000);
+    }, 10000);
 }
 function setContentHeight() {     
     setInterval(function(){
