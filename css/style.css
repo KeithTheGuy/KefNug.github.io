@@ -23,6 +23,13 @@
     overflow: hidden;
 }
 
+div.video video {
+    -webkit-mask-image: url("../media/transparent.png");
+    border-radius: 32px;
+    height: 100%;
+    width: 100%;
+}
+
 .wiggle {
     animation: wiggle 8s linear infinite;
 }
