@@ -18,8 +18,11 @@
 
     <body onload="setCenterHeight();">
         <div class="center" id="center" style="background-color: rgba(0,0,0,0.8);">
-            <img src="media/ducky-transparent.png" style="border-radius:50%; width:16%;"></img>
-            <p align="center"><button class="rainbowFade" onclick="document.getElementById('video').muted = false; document.getElementById('video').volume = 0.24; document.getElementById('video').play(); this.remove();" style="background-color:black;border:none;">&#x2764;</button><br><video id="video" loop type="video/mp4" src="media/peaceandtranquility.mp4" style="width:80%;"></video></p>
+            <img src="media/ducky-transparent.png" style="border-radius:50%; width:12%;"></img>
+            <p align="center">&#x25b6;<button class="rainbowFade" onclick="document.getElementById('video').muted = false; document.getElementById('video').volume = 0.24; document.getElementById('video').play(); this.remove();" style="background-color:transparent;border:none;">&#x2764;</button>&#x25c0;</p>
+            <div style="-webkit-mask-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=);border-radius:5vw;margin:0 auto;width:75%;">
+                <video id="video" loop type="video/mp4" src="media/peaceandtranquility.mp4" style="width:100%;"></video>
+            </div>
         </div>
     </body>
 </html>

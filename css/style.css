@@ -20,6 +20,7 @@ a {
 body {
     background: black repeat fixed;
     height: 100%;
+    overflow: hidden;
     width: 100%;
 }
 
