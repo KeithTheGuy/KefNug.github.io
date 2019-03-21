@@ -3,14 +3,23 @@
 	    <link rel="icon" type="image/png" href="media/favicon.png" sizes="196x196">
         <link rel="stylesheet" type="text/css" href="css/rainbow.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script>
+            function setCenterHeight() {
+                var centerHeight;
+                setInterval(function(){
+                    centerHeight = (window.innerHeight - document.getElementById("center").offsetTop + 192) + "px";
+                    console.log(centerHeight);
+                    document.getElementById("center").style.height = centerHeight;
+                }, 100);
+            }
+        </script>
         <title>Ducky</title>
     </head>
 
-    <body onload="setContentHeight();">
+    <body onload="setCenterHeight();">
         <div class="center" id="center" style="background-color: rgba(0,0,0,0.8);">
-            <img src="media/ducky-transparent.png" style="border-radius:50%; height:64px; width:64px;"></img>
-            <p align="center"><button onclick="document.getElementById('video').muted = false; document.getElementById('video').volume = 0.24; document.getElementById('video').play(); this.remove();" style="background-color:black; color:white;">&#x2764;</button></p>
-			<video id="video" loop type="video/mp4" src="media/peaceandtranquility.mp4"></video>
+            <img src="media/ducky-transparent.png" style="border-radius:50%; width:16%;"></img>
+            <p align="center"><button class="rainbowFade" onclick="document.getElementById('video').muted = false; document.getElementById('video').volume = 0.24; document.getElementById('video').play(); this.remove();" style="background-color:black;border:none;">&#x2764;</button><br><video id="video" loop type="video/mp4" src="media/peaceandtranquility.mp4" style="width:80%;"></video></p>
         </div>
     </body>
 </html>
