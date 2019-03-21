@@ -6,30 +6,11 @@
         <title>Ducky</title>
     </head>
 
-    <body onload="animatedTitle(); setContentHeight();">
+    <body onload="setContentHeight();">
         <div class="center" id="center" style="background-color: rgba(0,0,0,0.8);">
-            <img class="wiggle" src="media/ducky.png" style="border-radius:50%; height:64px; width:64px;"></img>
-            <div class="content" id="content">
-                <div id="home">
-                    <p><a name="home" style="color: cyan;">Home</a> | <a href="#projects">Projects</a> | <a href="#references">References</a></p>
-	            <h1>Home</h1>
-                    <p>Yeah...ducky doin' a big remodel again. More info coming soon.</p>
-                    <p align="center"><button onclick="document.getElementById('video').muted = false; document.getElementById('video').volume = 0.24; document.getElementById('video').play(); this.remove();" style="background-color:black; color:white;">&#x2764;</button></p>
-                    <div class="video" height="65%" width="100%">
+            <img src="media/ducky-transparent.png" style="border-radius:50%; height:64px; width:64px;"></img>
+            <p align="center"><button onclick="document.getElementById('video').muted = false; document.getElementById('video').volume = 0.24; document.getElementById('video').play(); this.remove();" style="background-color:black; color:white;">&#x2764;</button></p>
 			<video id="video" loop type="video/mp4" src="media/peaceandtranquility.mp4"></video>
-		    </div>
-                </div>
-                <div id="projects">
-                    <p><a href="#home">Home</a> | <a name="projects" style="color: cyan;">Projects</a> | <a href="#references">References</a></p>
-		    <h1>Projects</h1>
-                    <p>WIP.</p>
-                </div>
-                <div id="references">
-                    <p><a href="#home">Home</a> | <a href="#projects">Projects</a> | <a name="references" style="color: cyan;">References</a></p>
-		    <h1>References</h1>
-                    <p>Also WIP.</p>
-                </div>              
-            </div>
         </div>
     </body>
 </html>
