@@ -1,14 +1,15 @@
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/rainbow.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <p>Home | <a href="references.html">References</a><br><br></p>
-        <h2>Home</h2>
-        <p>Welcome, I'm glad you came to visit! (&#65342;&#9661;&#65342;)</p>
-        <p align="center"><button onclick="document.getElementById('video').muted = false; document.getElementById('video').volume = 0.32; document.getElementById('video').play(); this.remove();" style="background-color:black; color:white;">&#x2764;</button></p>
-        <video id="video" height="65%" width="100%" loop>
-            <source type="video/mp4" src="files/peaceandtranquility.mp4">
-        </video>
+        <p>Home | <a href="references.html">References</a><br></p>
+        <h1>Home</h1>
+        <p>Welcome, I'm glad you came to visit! (&#65342;&#9661;&#65342;) This is my site, and where I'll be uploading, documenting, and sharing my projects. I don't make much (and half of the time my projects are deleted), but I will try my best to keep what I have alive!</p>
+        <p align="center"><br><br><br><button class="rainbowFade" onclick="document.getElementById('video').muted = false; document.getElementById('video').volume = 0.24; document.getElementById('video').play(); this.remove();">&#x2764;</button></p>
+        <div style="-webkit-mask-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=);border-radius:5vw;margin:0 auto;width:75%;">
+            <video id="video" loop type="video/mp4" src="media/peaceandtranquility.mp4" style="width:100%;"></video>
+        </div>
     </body>
 </html>

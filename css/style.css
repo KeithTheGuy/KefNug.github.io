@@ -1,15 +1,23 @@
+@keyframes background {
+    from{background-position:0 0,0 0,0 0;}
+    to{background-position:0 128px,0px 256px,0px 512px;}
+}
 * {
+    font-family: courier;
+    font-size: 12px;
     margin: 0;
 }
 
 .center {
+    border: 8px solid black;
+    border-radius: 8px 8px 0 0;
     left: 50%;
     position: absolute;
     text-align: center;
     top: 50%;
-    -webkit-transform: translate(-50%, -24vh);
-    -ms-transform: translate(-50%, -24vh);
-    transform: translate(-50%, -24vh);
+    -webkit-transform: translate(-50%, -192px);
+    -ms-transform: translate(-50%, -192px);
+    transform: translate(-50%, -192px);
     width: 40%;
 }
 
@@ -17,23 +25,42 @@ a {
     color: lime;
 }
 
-body {
-    background: black repeat fixed;
+body.index {
+    animation: background 4s linear infinite;
+    background-color: black;
+    background-image: url('../media/background0.png'),url('../media/background1.png'),url('../media/background2.png');
+    background-repeat: repeat,repeat,repeat;
+    
     height: 100%;
     overflow: hidden;
     width: 100%;
 }
 
-embed {
+button{
+    background-color: transparent;
     border: none;
+    transition: 0.4s;
+} button:hover {
+    animation-play-state: paused;
+    background-color: white;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+embed {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
     color: white;
-    font-family: courier;
+    font-size: 24px;
+}
+
+h2 {
+    color: white;
+    font-size: 18px;
 }
 
 p {
-    color: cyan;
-    font-size: 12px;
+    color: aqua;
 }
