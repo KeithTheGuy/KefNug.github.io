@@ -30,7 +30,7 @@ body.index {
     background-color: black;
     background-image: url('../media/background0.png'),url('../media/background1.png'),url('../media/background2.png');
     background-repeat: repeat,repeat,repeat;
-    
+    cursor: none;
     height: 100%;
     overflow: hidden;
     width: 100%;
@@ -63,4 +63,25 @@ h2 {
 
 p {
     color: aqua;
+}
+
+.cursor {
+    background-color: rgb(var(--red),var(--green),var(--blue));
+    border-radius: 0% 50% 50% 50%;
+    height: 16px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    width: 16px;
+}
+
+.cursorTrail {
+    animation: cursorTrail 0.8s forwards ease-out;
+    background-color: rgb(var(--red),var(--green),var(--blue));
+    border-radius: 50%;
+    height: 16px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    width: 16px;
 }
