@@ -2,6 +2,12 @@
     from{background-position:0 0,0 0,0 0;}
     to{background-position:0 128px,0px 256px,0px 512px;}
 }
+
+@keyframes cursorTrail {
+    from {opacity: 1;}
+    to {height: 0; opacity: 0; transform: translate(var(--randomX), 128px); width: 0;}
+}
+
 * {
     font-family: courier;
     font-size: 12px;
