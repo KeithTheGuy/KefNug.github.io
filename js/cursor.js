@@ -21,8 +21,8 @@ document.onmousemove = function() {
     cursorTrail.style.setProperty("--randomX", Math.floor(Math.random() * 129)-64 + "px");
     cursorTrail.style.setProperty("--red", red);
 
-    document.getElementById("index").appendChild(cursorTrail);
-    setTimeout(function(){document.getElementById("index").removeChild(cursorTrail);}, 800);
+    document.body.appendChild(cursorTrail);
+    setTimeout(function(){document.body.removeChild(cursorTrail);}, 800);
 };
 
 function rainbowCycle() {
@@ -34,5 +34,5 @@ function cursorUpdate() {
     cursor.style.setProperty("--red", red);
     cursor.style.setProperty("--green", green);
     cursor.style.setProperty("--blue", blue);
-    document.getElementById("index").appendChild(cursor);
+    document.body.appendChild(cursor);
 }
