@@ -2,6 +2,10 @@
     from{background-position:0 0,0 0,0 0;}
     to{background-position:0 128px,0px 256px,0px 512px;}
 }
+@keyframes float {
+    0{transform:translateY(0px);}
+    to{transform:translateY(8px);}
+}
 
 * {
     font-family: courier;
@@ -22,6 +26,10 @@
     width: 40%;
 }
 
+.float {
+    animation: float 2s ease infinite alternate;
+}
+
 a {
     color: lime;
 }
@@ -31,7 +39,6 @@ body.index {
     background-color: black;
     background-image: url('../media/background0.png'),url('../media/background1.png'),url('../media/background2.png');
     background-repeat: repeat,repeat,repeat;
-    cursor: none;
     height: 100%;
     overflow: hidden;
     width: 100%;
