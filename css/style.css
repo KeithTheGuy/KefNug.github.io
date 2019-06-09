@@ -3,11 +3,6 @@
     to{background-position:0 128px,0px 256px,0px 512px;}
 }
 
-@keyframes cursorTrail {
-    from {opacity: 1;}
-    to {height: 0; opacity: 0; transform: translate(var(--randomX), 128px); width: 0;}
-}
-
 * {
     font-family: courier;
     font-size: 12px;
@@ -75,25 +70,4 @@ h2 {
 
 p {
     color: aqua;
-}
-
-.cursor {
-    background-color: rgb(var(--red),var(--green),var(--blue));
-    border-radius: 0% 50% 50% 50%;
-    height: 16px;
-    overflow: hidden;
-    pointer-events: none;
-    position: absolute;
-    width: 16px;
-}
-
-.cursorTrail {
-    animation: cursorTrail 0.8s forwards ease-out;
-    background-color: rgb(var(--red),var(--green),var(--blue));
-    border-radius: 50%;
-    height: 16px;
-    overflow: hidden;
-    pointer-events: none;
-    position: absolute;
-    width: 16px;
 }
