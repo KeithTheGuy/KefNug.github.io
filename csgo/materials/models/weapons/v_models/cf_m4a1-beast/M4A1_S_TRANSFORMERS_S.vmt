@@ -1,0 +1,19 @@
+//"UnlitGeneric"
+"VertexlitGeneric"
+{
+$basetexture 	"models\weapons\v_models\cf_m4a1-beast\M4A1_S_TRANSFORMERS_S"
+$bumpmap 	"models\weapons\v_models\cf_m4a1-beast\M4A1_S_TRANSFORMERS_S_N"
+
+//$additive 	"1"
+//$Selfillum	"1"
+//$translucent 1
+
+$phong 1
+$phongexponent 	"50"
+$phongboost "2"
+$phongfresnelranges "[.8 .8 1]"
+$normalmapalphaenvmapmask "1"
+$phongalbedotint 1
+$phongdisablehalflambert 1
+}
+

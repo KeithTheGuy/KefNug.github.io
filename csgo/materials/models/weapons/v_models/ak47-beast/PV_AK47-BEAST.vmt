@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 	"models\weapons\v_models\ak47-beast\PV_AK47-BEAST"
+	"$bumpmap" 	"models\weapons\v_models\ak47-beast\PV_AK47-BEAST_N"
+	  "$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$phong" 		"1"
+	"$phongexponent" 	"5"
+	"$phongboost" ".5"
+	"$phongfresnelranges" "[.9 1.5 1]"
+}
+

@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+$basetexture "models\weapons\v_models\cf_m4a1-beast\yuanhuan"
+$additive 	"1"
+$Selfillum	"1"
+}
