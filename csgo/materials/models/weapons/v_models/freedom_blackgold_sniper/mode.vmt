@@ -1,7 +1,0 @@
-UnLitGeneric
-{
-$basetexture models\weapons\v_models\freedom_blackgold\lens01
-$translucent 1
-$selfillum 1
-
-}
