@@ -1,9 +1,0 @@
-"UnlitGeneric"
-{
-$baseTexture models\weapons\v_models\an94_spaceship\light
-$additive 1
-$selfillum 1
-}
-
-
-
