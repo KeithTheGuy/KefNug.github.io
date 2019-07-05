@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+"$basetexture" "models\v_models\weapons\ak47_beast\PV-AK47-Beast"
+"$bumpmap" "models\v_models\weapons\ak47_beast\PV-AK47-Beast_N"
+"$PhongExponentTexture"         "models\v_models\weapons\ak47_beast\PV-AK47-Beast_e"
+"$envmap" "env_cubemap"
+"$normalmapalphaenvmapmask" 	"1"
+"$envmapfresnel" 			"1"
+"$envmapFresnelMinMaxExp"		"[10 10 10]"
+"$envmaptint" "[1 1 1]"
+"$phong" 		"1"
+"$phongboost" "5"
+"$phongalbedotint"			"1"
+"$phongalbedoboost"			"5"
+"$phongfresnelranges" "[1.5 3.8 7.9]"
+"$nocull" "1"
+
+}
