@@ -1,0 +1,17 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models\weapons\v_models\IRONBEAST\Aperture"
+	"$surfaceprop" "Default"
+	"$selfillum" 1
+	"$model" 1
+        "$additive" 1
+	"Proxies" 
+		{ 
+		"AnimatedTexture" 
+			{ 
+			"animatedTextureVar" "$basetexture" 
+			"animatedTextureFrameNumVar" "$frame" 
+			"animatedTextureFrameRate" "15" 
+			}
+		} 
+}

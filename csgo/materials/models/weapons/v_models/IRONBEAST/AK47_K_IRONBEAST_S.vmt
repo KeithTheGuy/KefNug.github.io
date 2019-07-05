@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+$baseTexture "models\weapons\v_models\IRONBEAST\AK47_K_IRONBEAST_S"
+        "$selfillum" "1"
+        "$additive" 1
+
+}
