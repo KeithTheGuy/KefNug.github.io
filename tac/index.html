@@ -1,15 +1,18 @@
 <html>
     <head>
         <script>
-        var x = 0;
-            document.documentElement.style.setProperty("--rainbowSpeed", "2.4s");
-            setInterval(function() {
-                if(x>12) {
-                    setTimeout(function(){document.getElementById("loader").innerHTML = "Loading complete!";},500);
-                } else {
+        var x=0;
+            document.documentElement.style.setProperty("--rainbowSpeed","2.4s");
+            setInterval(function(){
+                if(x>12){
+                    setTimeout(
+                        function(){
+                            document.getElementById("loader").innerHTML="Loading complete!";
+                        }
+                    ,500);
+                }else{
                     x++;
-                    console.log(x);
-                    document.getElementById("loader").innerHTML = "Loading...("+x+"/13)";
+                    document.getElementById("loader").innerHTML="Loading...("+x+"/13)";
                 }
             },100);
         </script>
@@ -37,9 +40,9 @@
         </style>
         <title>/TAC/ Archive</title>
     </head>
-    <body style="width: 512px">
-        <h1 style="color:yellow;"><image height="24px" src="folder.png" width="24px"></img> /TAC/ Archive</h1>
-        <p>This is the official archive of "The Abandoned Cat", which was a fanfiction created by Galaxy from a Discord server that was known as "SoloCord". The story follows two Characters based on people from said server named <span onmouseover="document.getElementById('tiffany').style.display='block';" onmouseout="document.getElementById('tiffany').style.display='none';" style="color:magenta;">SoloEclipze (Tiffany)</span> and <span onmouseover="document.getElementById('noah').style.display='block';" onmouseout="document.getElementById('noah').style.display='none';" style="color:magenta;">Valocarus (Noah)</span>. Tiffany seems to have been cursed, and turned into a cat. Noah finds her and takes her into his care. Do they find a way to reverse the curse? Does Noah like Tiffany, and does Tiffany feel the same way? Well, I guess you'll have to read it to find out! ;)</p>
+    <body>
+        <h1 style="color:yellow;">/TAC/ Archive</h1>
+        <p>This is the official archive of "The Abandoned Cat", which was a fanfiction created by Galaxy from a Discord server that was known as "SoloCord". The story follows two Characters based on people from said server named <span style="color:magenta;">SoloEclipze (Tiffany)</span> and <span style="color:blue;">Valocarus (Noah)</span>. Tiffany seems to have been cursed, and turned into a cat. Noah finds her and takes her into his care. Do they find a way to reverse the curse? Does Noah like Tiffany, and does Tiffany feel the same way? Well, I guess you'll have to read it to find out! ;)</p>
         <p><span id="loader" style="color:yellow;">Loading...(0/13)</span><br>
             <a class="rainbowFade" href="The_Abandoned_Cat_PART_1_FOR_VALO_AND_SOLO.txt" style="animation-delay: 0.1s;">PART 01</a><br>
             <a class="rainbowFade" href="The_Abandoned_Cat_PART_2_FOR_VALO_AND_SOLO.txt" style="animation-delay: 0.2s;">PART 02</a><br>
@@ -56,7 +59,7 @@
             <a class="rainbowFade" href="The_Abandoned_Cat_PART_13_FOR_VALO_AND_SOLO.txt" style="animation-delay: 1.3s;">PART 13</a></p>
         <h3 style="color:yellow;">To Galaxy:</h3>
         <p>Thank you <b>SO</b> much for finding the files for me, I promise this site won't die 2 weeks after I start hosting it like the other one I had xP While I will admit that this fanfiction hasn't aged well, it's one of the few things we still have from the official SoloCord. It was an amazing nostalgia trip, and I'm genuinely thankful for that. Thank you. &#x2764</p>
-        <img id="tiffany" src="DChRgT9XsAEX0-d.jpg" style="border-radius:1%; display:none; left:528px; position:absolute; top:16px;" width="192px"></img>
-        <img id="noah" src="C-oOOdHXsAAMcIw.jpg" style="border-radius:1%; display:none; left:528px; position:absolute; top:16px;" width="192px"></img>
+        <img id="tiffany" src="DChRgT9XsAEX0-d.jpg" style="left:528px; top:16px;" width="192px"></img>
+        <img id="noah" src="C-oOOdHXsAAMcIw.jpg" style="left:528px; top:16px;" width="192px"></img>
     </body>
 </html>
