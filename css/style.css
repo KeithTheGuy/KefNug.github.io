@@ -2,10 +2,6 @@
     from{background-position:0 0,0 0,0 0;}
     to{background-position:0 128px,0px 256px,0px 512px;}
 }
-@keyframes float {
-    0{transform:translateY(0px);}
-    to{transform:translateY(8px);}
-}
 
 * {
     font-family: courier;
@@ -20,10 +16,10 @@
     position: absolute;
     text-align: center;
     top: 50%;
-    -webkit-transform: translate(-50%, -192px);
-    -ms-transform: translate(-50%, -192px);
-    transform: translate(-50%, -192px);
-    width: 40%;
+    -webkit-transform: translate(-50%, -256px);
+    -ms-transform: translate(-50%, -256px);
+    transform: translate(-50%, -256px);
+    width: 64%;
 }
 
 .float {
