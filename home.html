@@ -2,15 +2,42 @@
     <head>
         <link rel="stylesheet" type="text/css" href="css/rainbow.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script>
+            document.documentElement.style.setProperty('--rainbowSpeed', '2s');
+            
+            function clickButton() {
+                document.documentElement.style.setProperty('--rainbowSpeed', '1s');
+                document.getElementById('description').classList.add('rainbowScroll');
+                document.getElementById('description').innerHTML = 'Drifting off...';
+                document.getElementById('description').style.textAlign = "center";
+                document.getElementById('navigation').style.opacity = 0;
+                document.getElementById('peaceandtranquility').muted = false;
+                document.getElementById('peaceandtranquility').play();
+                document.getElementById('peaceandtranquility').volume = 0.24;
+                document.getElementById('peaceandtranquilityBtn').style.opacity = 0;
+                document.getElementById('peaceandtranquilityDiv').style.opacity = 1;
+                document.getElementById('title').style.opacity = 0;
+            }
+            function clickVideo() {
+                document.documentElement.style.setProperty('--rainbowSpeed', '2s');
+                document.getElementById('description').classList.remove('rainbowScroll');
+                document.getElementById('description').innerHTML = "Welcome, I'm glad you came to visit! (&#65342;&#9661;&#65342;) This is my site, and where I'll be uploading, documenting, and sharing my projects. I don't make much (and half of the time my projects are deleted), but I will try my best to keep what I have alive!";
+                document.getElementById('description').style.textAlign = "left";
+                document.getElementById('navigation').style.opacity = 1;
+                document.getElementById('peaceandtranquility').pause();
+                document.getElementById('peaceandtranquilityBtn').style.opacity = 1;
+                document.getElementById('peaceandtranquilityDiv').style.opacity = 0;
+                document.getElementById('title').style.opacity = 1;
+            }
+        </script>
     </head>
     <body>
-        <p>Home | <a href="references.html">References</a><br></p>
-        <h1>Home</h1>
-        <p>Welcome, I'm glad you came to visit! (&#65342;&#9661;&#65342;) This is my site, and where I'll be uploading, documenting, and sharing my projects. I don't make much (and half of the time my projects are deleted), but I will try my best to keep what I have alive!</p>
-        <p align="center"><br><button class="rainbowFade" onclick="document.getElementById('video').muted = false; document.getElementById('video').volume = 0.24; document.getElementById('video').play(); this.remove();">&#x2764;</button></p>
-        <div style="margin:0 auto; height:240px;">
-            <video id="video" loop type="video/mp4" src="media/peaceandtranquility.mp4" style="border-radius:5vw; height:240px;"></video>
+        <p id="navigation">Home | <a href="references.html">References</a><br></p>
+        <h1 id="title">Home</h1>
+        <p id="description">Welcome, I'm glad you came to visit! (&#65342;&#9661;&#65342;) This is my site, and where I'll be uploading, documenting, and sharing my projects. I don't make much (and half of the time my projects are deleted), but I will try my best to keep what I have alive!</p>
+        <p align="center"><br><button class="rainbowFade" id="peaceandtranquilityBtn" onclick="clickButton();">&#x2764;</button></p>
+        <div id="peaceandtranquilityDiv" align="center" style="opacity: 0;margin:0 auto; height:240px;" onclick="clickVideo();">
+            <video id="peaceandtranquility" loop type="video/mp4" src="media/peaceandtranquility.mp4" style="border-radius:5vw; height:240px;"></video>
         </div>
-        <div style="bottom:0; height:12px;"><p>test</p></div>
     </body>
 </html>

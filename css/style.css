@@ -1,8 +1,3 @@
-@keyframes background {
-    from{background-position:0 0,0 0,0 0;}
-    to{background-position:0 128px,0px 256px,0px 512px;}
-}
-
 * {
     font-family: courier;
     font-size: 12px;
@@ -10,15 +5,14 @@
 }
 
 .center {
-    border: 8px solid black;
     border-radius: 8px 8px 0 0;
+    height: 100%;
     left: 50%;
     position: absolute;
     text-align: center;
-    top: 50%;
-    -webkit-transform: translate(-50%, -256px);
-    -ms-transform: translate(-50%, -256px);
-    transform: translate(-50%, -256px);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     width: 64%;
 }
 
@@ -31,10 +25,9 @@ a {
 }
 
 body.index {
-    animation: background 4s linear infinite;
     background-color: black;
-    background-image: url('../media/background0.png'),url('../media/background1.png'),url('../media/background2.png');
-    background-repeat: repeat,repeat,repeat;
+    background-image: url('../media/background.gif');
+    background-repeat: repeat;
     height: 100%;
     overflow: hidden;
     width: 100%;

@@ -2,20 +2,15 @@
     <head>
 	<link rel="icon" type="image/x-icon" href="media/favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script>
-            function setContentHeight() {
-                document.getElementById("center").style.height = (window.innerHeight - document.getElementById("center").offsetTop + 256) + "px";
-                document.getElementById("content").style.height = (window.innerHeight - document.getElementById("content").offsetTop - 64) + "px";
-            }
-        </script>
         <title>Ducky</title>
     </head>
 
-    <body class="index" onresize="setContentHeight();">
-        <div class="center" id="center" style="background-color: rgba(0,0,0,0.8);">
+    <body class="index">
+        <div class="center">
+            <br><br><br><br><br><br><br><br>
             <img src="media/ducky.png" style="border-radius:50%; width:64px;"></img>
             <h1>Ducky</h1>
-            <embed id="content" src="home.html"></embed>
+            <embed src="home.html" style="background-color: rgba(0,0,0,0.8);"></embed>
         </div>
     </body>
 </html>
